@@ -1,0 +1,233 @@
+<!--<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 10 - ENVS</title>
+</head>
+<body>
+  <div class="main-content">
+    <h1>Class 10 - ENVS</h1>
+    <div class="qa-section">
+      <p>এই পৃষ্ঠায় Class 10 এর ENVS বিষয়ে নোট যোগ করা হবে।</p>
+    </div>
+  </div>
+</body>
+</html>
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 10 - ENVS</title>
+  <style>
+    body {
+      font-family: 'Noto Sans Bengali', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .menu-toggle {
+      display: none;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background-color: #2b4a77;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 1001;
+      border-radius: 4px;
+    }
+
+    .sidebar {
+      width: 260px;
+      background-color: #2b4a77;
+      color: #fff;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .sidebar.hidden {
+      transform: translateX(-100%);
+    }
+
+    .sidebar h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      color: #fff;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      margin-bottom: 10px;
+    }
+
+    .dropdown-content {
+      display: none;
+      margin-left: 10px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content li {
+      margin-bottom: 6px;
+    }
+
+    .main-content {
+      margin-left: 280px;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      font-size: 1.5em;
+      color: #2b4a77;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      margin-bottom: 10px;
+    }
+
+    .qa-section {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .qa-section li strong:first-child {
+      color: #d32f2f;
+    }
+
+    .class-5 > a { background-color: #e57373; padding: 5px; border-radius: 4px; display: inline-block; }
+    .class-6 > a { background-color: #f06292; padding: 5px; border-radius: 4px; display: inline-block; }
+    .class-7 > a { background-color: #ba68c8; padding: 5px; border-radius: 4px; display: inline-block; }
+    .class-8 > a { background-color: #64b5f6; padding: 5px; border-radius: 4px; display: inline-block; }
+    .class-9 > a { background-color: #4db6ac; padding: 5px; border-radius: 4px; display: inline-block; }
+    .class-10 > a { background-color: #81c784; padding: 5px; border-radius: 4px; display: inline-block; }
+    .class-11 > a { background-color: #ffd54f; padding: 5px; border-radius: 4px; display: inline-block; }
+    .class-12 > a { background-color: #ffb74d; padding: 5px; border-radius: 4px; display: inline-block; }
+
+    .dropdown-content li a {
+      background-color: #ffffff11;
+      padding: 3px 8px;
+      border-radius: 4px;
+      display: block;
+    }
+
+    .dropdown-content li a:hover {
+      background-color: #ffffff33;
+    }
+
+    @media screen and (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .sidebar {
+        transform: translateX(-100%);
+      }
+
+      .sidebar.visible {
+        transform: translateX(0);
+      }
+
+      .main-content {
+        margin-left: 0;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+  <div class="sidebar" id="sidebar">
+    <h2>Class Notes</h2>
+    <ul>
+      <script>
+        const classes = [5, 6, 7, 8, 9, 10, 11, 12];
+        const subjects = ["Bengali", "English", "English Grammar", "English Writing", "Math", "History", "Geography", "Physical Science", "Life Science", "ENVS", "Sanskrit"];
+        document.write(classes.map(cls => `
+          <li class="dropdown class-${cls}">
+            <a href="#">Class ${cls}</a>
+            <ul class="dropdown-content">
+              ${subjects.map(sub => `<li><a href="class${cls}-${sub.toLowerCase().replace(/\s+/g, '-')}.html">${sub}</a></li>`).join('')}
+            </ul>
+          </li>
+        `).join(''));
+      </script>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <h1>Class 10 - ENVS</h1>
+    <div class="qa-section">
+      <p>এই পৃষ্ঠায় Class 10 এর ENVS বিষয়ে নোট যোগ করা হবে।</p>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <h1>📘 Welcome to ACHIEVERS STUDY CENTRE</h1>
+    <p>This website is made for students from Class 5 to 12. You can explore:</p>
+    <ul>
+      <li>Questions and Answers</li>
+      <li>Grammar Notes</li>
+      <li>Writing Sections</li>
+      <li>All major subjects</li>
+    </ul>
+    <p><strong>👉 Start by clicking on a Class from the sidebar to begin!</strong></p>
+
+    <div style="background:#e3f2fd; padding: 20px; border-radius: 10px; margin-top: 20px;">
+      <h2>🔍 How to use:</h2>
+      <p>Select a class → Choose your subject → Read or edit content!</p>
+      <p>More features like search and printing will be added soon.</p>
+    </div>
+<!--
+    <div style="margin-top: 30px; display: flex; flex-wrap: wrap; gap: 20px;">
+      <img src="https://cdn.pixabay.com/photo/2016/03/27/22/16/school-1280028_1280.jpg" width="300" style="border-radius:10px;">
+      <img src="https://cdn.pixabay.com/photo/2015/09/05/20/02/children-925022_1280.jpg" width="300" style="border-radius:10px;">
+      <img src="https://cdn.pixabay.com/photo/2017/07/27/20/46/people-2542833_1280.jpg" width="300" style="border-radius:10px;">
+      <img src="IMG_20250203_122524.jpg" width="300" style="border-radius:10px;">
+      <img src="IMG_20250201_203158.jpg" width="300" style="border-radius:10px;">
+      
+    </div> -->
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('visible');
+    }
+  </script>
+</body>
+</html>
+
+
